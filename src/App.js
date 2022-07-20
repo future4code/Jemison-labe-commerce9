@@ -1,12 +1,13 @@
 import React from 'react';
 
 import './App.css';
-import { Home } from './components/Home';
+import Carrinho from './components/Carrinho/Carrinho';
+
 function App() {
   return (
     <div className="App">
-    
-  
+
+      <Carrinho />
     </div>
   );
 }
