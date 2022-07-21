@@ -1,7 +1,9 @@
 import {useState} from 'react';
 import {Filters} from './components/Filtro/Filtro'
-import { DigitaFiltro } from './components/Filtro/style';
 import {listaProdutos} from './components/MockDeDados'
+import {Home} from './components/Home/Home'
+
+
 
 
 function App() {
@@ -27,12 +29,12 @@ function App() {
       .filter((produto)=>{
       return produto.name.includes(nome)})
       .filter((produto)=>{
-        return produto.valor >= valorMin}) || valorMin === ""
+        return produto.price >= valorMin}) || valorMin === ""
       .filter((produto)=>{
-          return produto.valor <= valorMax}) || valorMax === ""
+          return produto.price <= valorMax}) || valorMax === ""
       
       .map(produto => {
-        return <listaProdutos key={produto.id} produto={produto}/>
+        return <Home key={produto.name} produto={produto}/>
       })}
     
      </div>

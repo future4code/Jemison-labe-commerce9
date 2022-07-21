@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import {MockDeDados} from "./components/MockDeDados"
+
 import { DigitaFiltro } from "./style";
 
 export function Filters(props){
