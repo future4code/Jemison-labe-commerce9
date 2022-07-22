@@ -3,48 +3,39 @@ import  styled  from "styled-components";
 
 
 export const ContainerPai=styled.div`
-  display:flex;
-  flex-direction:column;
-  background-color: #E0E0E0;
-  padding: 1rem;
-  margin: 0.5rem;
-  border-radius: 0.5rem;
-  width:150px;
-  height:300px;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+align-items:center;
+width:100%;
+height:100%;
+`
+export const Btn=styled.button`
+background-color:yellow;
+border-radius:10px;
+
 `
 
-
-
-
-
-/* 
+export const CardBtn =styled.div`
+margin-top:10px;
 
 `
-export const Imagem =styled.div`
 
-
+export const Card =styled.div`
+display:flex;
+flex-direction:column;
+align-items:center;
+width:250px;
+padding:10px;
+border-radius:10px;
+background-color:white;
+border:1px solid black;
+background-color:white;
 `
-export const ColorSpan=styled.div`
 
-
+export const Imagem= styled.img`
+width:80%;
+height:80%;
+/* border:1px solid black; */
+background-color:aquamarine;
 `
-const PrecoS=styled.div`
-
-
-`
-const SizeSpan=styled.div`
-
-
-`
-const BotaoCarrinho =styled.div`
-
-
-`
-const H4=styled.div`
-
-
-`
-const H3=styled.div`
-
-
-` */

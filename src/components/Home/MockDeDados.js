@@ -1,6 +1,6 @@
-// import {Foto1} from './components/Home/img/tshirtBlack.png'; 
+//  import {Foto1} from './components/Home/img/tshirtBlack.png'; 
  
- export const listaDeDados ={produtos:[
+ export const listaDeDados =[
        
     {   id:1,
         nome: "Camisa Star Wars 2",
@@ -63,4 +63,3 @@
         status:true,
 }
   ]
-}

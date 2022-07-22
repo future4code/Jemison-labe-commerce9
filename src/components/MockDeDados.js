@@ -1,4 +1,4 @@
-export const listaProdutos = [
+export const listaProdutos ={produtos: [
     {
         id: 1,
         name: 'Produto 1',
@@ -39,5 +39,5 @@ export const listaProdutos = [
         name: 'Produto 6',
         price: 678,
         photo: 'https://picsum.photos/200/200?a=1',
-      },
-]
+      }]
+    }
