@@ -1,8 +1,15 @@
+<<<<<<< HEAD
+import React from 'react';
+=======
  labecomerce-jefferson
 import React,{useState}from 'react';
+>>>>>>> 3395cd811cd06328a3223325650c7e7ba7fa2b5d
 import './App.css';
-import Carrinho from './components/Carrinho/Carrinho';
+import {Carrinho} from './components/Carrinho/Carrinho';
+import { Filtro } from './components/Filtro';
 import { Home } from './components/Home/Home';
+<<<<<<< HEAD
+=======
 import { listaDeDados } from './components/Home/MockDeDados';
 =======
 import {useState} from 'react';
@@ -12,6 +19,7 @@ import {Home} from './components/Home/Home'
 
 
 
+>>>>>>> 3395cd811cd06328a3223325650c7e7ba7fa2b5d
 
 
 function App() {
@@ -44,8 +52,13 @@ function App() {
 
   return (
     <div className="App">
+<<<<<<< HEAD
+     <Home/>
+=======
 
+>>>>>>> 3395cd811cd06328a3223325650c7e7ba7fa2b5d
       <Carrinho />
+      <Filtro/>
     </div>
   );
 
