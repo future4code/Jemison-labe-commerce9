@@ -1,18 +1,26 @@
-import React  from "react";
+import React,{useState} from "react";
 import {ContainerPai,Btn,CardBtn,Card,Imagem} from "./style";
 import {listaDeDados} from './MockDeDados';
+import {contador,incrementarContador} from './Adicionar';
 
 
-
-function Homee(props){
+function Home(props){
+    const[contador,setContador]=useState(0);
+    function incrementarContador(){
+     let   cont= contador+1;
+        setContador(cont);
+    }
     // const[adiciona,setAdiciona]=useState([...listaDeDados])
-    // const adiconarProduto=()={
-    //     const produtoAdicionado =[...listaDeDados,produto]
-    //     setAdicionado(e.target.value)
+    // setAdiciona()=>{
+    //     const produtoAdicionado = ...listaDeDados{index}+1;)
+    //     setAdiciona(produtoAdicionado)
     // }
- 
-    //  console.log(adiciona)
+        
+    
+    //   console.log(adiciona)
     const Card1= listaDeDados.map((produto,index)=>{
+       
+     
         return(
      <ContainerPai key={index}>
            <Card key={produto.id}>
@@ -22,13 +30,13 @@ function Homee(props){
                <h3>{produto.Size}</h3>
                <span>{produto.ColorSpan}</span>
                <CardBtn>
-            
-                  <Btn >
+                     <h3>{contador}</h3>
+                  <Btn onClick={incrementarContador}>
                     Adicionar ao Carrinho
-                    </Btn> 
+                    </Btn    > 
                </CardBtn>    
           </Card>
-          {/* { onClick={() => aoCarrinho(produto)} } */}
+   
       </ContainerPai>
         )
     })
@@ -43,4 +51,4 @@ function Homee(props){
         </div>
     )
 }
-export default Homee;
+export default Home;

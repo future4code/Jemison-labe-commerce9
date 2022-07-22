@@ -4,7 +4,7 @@ import  styled  from "styled-components";
 
 export const ContainerPai=styled.div`
 display:flex;
-flex-wrap:wrap;
+flex-direction:row;
 justify-content:center;
 align-items:center;
 width:100%;
@@ -31,6 +31,8 @@ border-radius:10px;
 background-color:white;
 border:1px solid black;
 background-color:white;
+
+  
 `
 
 export const Imagem= styled.img`

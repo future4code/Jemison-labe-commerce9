@@ -5,7 +5,7 @@ import Foto1 from './img/tshirtBlack.png';
     {   id:1,
         nome: "Camisa",
         foto: Foto1,
-        Preco:150,
+        Preco:50000,
         Size:"G",
         ColorSpan:"Black",
    
@@ -14,7 +14,7 @@ import Foto1 from './img/tshirtBlack.png';
     {   
         id:2,
         nome: "Camisa Star Wars 2",
-        foto:"https://picsum.photos/id/180/2400/1600",
+        foto:Foto1,
         Preco:180,
         Size:"M",
         ColorSpan:"White",
@@ -24,7 +24,7 @@ import Foto1 from './img/tshirtBlack.png';
     {   
         id:3,
         nome: "Camisa Star Wars 2",
-        foto:"https://picsum.photos/id/180/2400/1600",
+        foto:Foto1,
         Preco: 230,
         Size:"P",
         ColorSpan:"Yellow",
@@ -34,7 +34,7 @@ import Foto1 from './img/tshirtBlack.png';
     { 
         id:4,
         nome: "Camisa Star Wars 2",
-        foto:"https://picsum.photos/id/180/2400/1600",
+        foto:Foto1,
         Preco: 42,
         SizePost:"G",
         ColorSpan:"Red",
@@ -43,7 +43,7 @@ import Foto1 from './img/tshirtBlack.png';
     {   
         id:5,
         nome: "Camisa Star Wars 2",
-        foto:"https://picsum.photos/id/180/2400/1600",
+        foto:Foto1,
         Preco:58,
         Size:"M",
         ColorSpan:"Blue",
@@ -53,7 +53,7 @@ import Foto1 from './img/tshirtBlack.png';
    {
         id:6,
         nome: "Camisa Star Wars 2",
-        foto:"https://picsum.photos/id/180/2400/1600",
+        foto:Foto1,
         Preco: 155,
         Size:"M",
         ColorSpan:"Blue",
