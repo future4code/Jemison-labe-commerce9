@@ -11,8 +11,8 @@ export function Filters(props){
             value={props.nome}
             onChange={(ev)=>{props.setNome(ev.target.value)}}
             />
+            
             <p>Valor mínimo</p>
-
              <input 
             placeholder=""
             type="number"
@@ -27,6 +27,7 @@ export function Filters(props){
             value={props.valorMax}
             onChange={(ev)=>{props.setValorMax(ev.target.value)}}
             />
+
         </ContainerFiltro>
     )
 }
