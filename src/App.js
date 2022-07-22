@@ -2,9 +2,11 @@
 import React,{useState}from 'react';
 import './App.css';
 import Carrinho from './components/Carrinho/Carrinho';
+import {Carrinho} from './components/Carrinho/Carrinho';
+import { Filtro } from './components/Filtro';
+import { Home } from './components/Home/Home';
 import { listaDeDados } from './components/Home/MockDeDados';
 import {useState} from 'react';
-
 
 
 
@@ -40,6 +42,7 @@ function App() {
     <div className="App">
 
       <Carrinho />
+      <Filtro/>
     </div>
   );
   }
