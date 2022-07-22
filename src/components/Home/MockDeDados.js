@@ -1,16 +1,14 @@
-//  import {Foto1} from './components/Home/img/tshirtBlack.png'; 
+import Foto1 from './img/tshirtBlack.png';
  
  export const listaDeDados =[
        
     {   id:1,
-        nome: "Camisa Star Wars 2",
-        foto:"https://picsum.photos/id/180/2400/1600",
+        nome: "Camisa",
+        foto: Foto1,
         Preco:150,
         Size:"G",
-        SpanSubtitle:"10%",
-        Underline:"",
         ColorSpan:"Black",
-        status:true,
+   
    },
    
     {   
@@ -20,7 +18,7 @@
         Preco:180,
         Size:"M",
         ColorSpan:"White",
-        status:true,
+    
    },
    
     {   
@@ -30,7 +28,7 @@
         Preco: 230,
         Size:"P",
         ColorSpan:"Yellow",
-        status:true,
+
    },
    
     { 
@@ -40,8 +38,7 @@
         Preco: 42,
         SizePost:"G",
         ColorSpan:"Red",
-        status:true,
-   },
+    },
    
     {   
         id:5,
@@ -50,7 +47,7 @@
         Preco:58,
         Size:"M",
         ColorSpan:"Blue",
-        status:true,
+     
    },
 
    {
@@ -60,6 +57,5 @@
         Preco: 155,
         Size:"M",
         ColorSpan:"Blue",
-        status:true,
-}
+   }
   ]
