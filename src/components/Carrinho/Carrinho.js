@@ -1,7 +1,7 @@
 import React from 'react'
 import { Botao, Cabecalho } from './style'
 
-function Carrinho() {
+export function Carrinho() {
 
   const title = "Carrinho de Produtos"
   return (
@@ -14,5 +14,5 @@ function Carrinho() {
   )
 }
 
-export default Carrinho
+
 
