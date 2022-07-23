@@ -7,9 +7,6 @@ export function Carrinho(props) {
     // Para somar valor total de produtos
     const precoDoProduto = itensCarrinho.reduce((a, c) => a + c.preco * c.quantidade, 0);
 
-    // const taxPrice = precoDoProduto * 0.14;
-    // const shippingPrice = precoDoProduto > 2000 ? 0 : 50;
-    // const totalPrice = precoDoProduto + taxPrice + shippingPrice;
     const precoTotal = precoDoProduto;
 
     return (

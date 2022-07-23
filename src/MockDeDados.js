@@ -1,16 +1,15 @@
-import Foto1 from './img/tshirtBlack.png';
+import Foto1 from './components/Home/img/foto1.png'
  
 
-export const listaDeDados = {
-    produtos: [
+export const listaDeDados =[
 
         {
             id: 1,
             nome: "Camisa",
             foto: Foto1,
-            Preco: 50000,
-            Size: "G",
-            ColorSpan: "Black",
+            preco: 50000,
+            size: "G",
+            colorSpan: "Black",
 
         },
 
@@ -18,9 +17,9 @@ export const listaDeDados = {
             id: 2,
             nome: "Camisa Star Wars 2",
             foto: Foto1,
-            Preco: 180,
-            Size: "M",
-            ColorSpan: "White",
+            preco: 180,
+            size: "M",
+            colorSpan: "White",
 
         },
 
@@ -28,9 +27,9 @@ export const listaDeDados = {
             id: 3,
             nome: "Camisa Star Wars 2",
             foto: Foto1,
-            Preco: 230,
-            Size: "P",
-            ColorSpan: "Yellow",
+            preco: 230,
+            size: "P",
+            colorSpan: "Yellow",
 
         },
 
@@ -38,18 +37,18 @@ export const listaDeDados = {
             id: 4,
             nome: "Camisa Star Wars 2",
             foto: Foto1,
-            Preco: 42,
+            preco: 42,
             SizePost: "G",
-            ColorSpan: "Red",
+            colorSpan: "Red",
         },
 
         {
             id: 5,
             nome: "Camisa Star Wars 2",
             foto: Foto1,
-            Preco: 58,
-            Size: "M",
-            ColorSpan: "Blue",
+            preco: 58,
+            size: "M",
+            colorSpan: "Blue",
 
         },
 
@@ -57,9 +56,8 @@ export const listaDeDados = {
             id: 6,
             nome: "Camisa Star Wars 2",
             foto: Foto1,
-            Preco: 155,
-            Size: "M",
-            ColorSpan: "Blue",
+            preco: 155,
+            size: "M",
+            colorSpan: "Blue",
         }
     ]
-}

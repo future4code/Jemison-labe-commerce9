@@ -1,4 +1,3 @@
-
 import  styled  from "styled-components";
 
 
@@ -13,12 +12,10 @@ height:100%;
 export const Btn=styled.button`
 background-color:yellow;
 border-radius:10px;
-
 `
 
 export const CardBtn =styled.div`
 margin-top:10px;
-
 `
 
 export const Card =styled.div`
@@ -31,7 +28,6 @@ border-radius:10px;
 background-color:white;
 border:1px solid black;
 background-color:white;
-
   
 `
 
