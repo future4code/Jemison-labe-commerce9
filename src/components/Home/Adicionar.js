@@ -1,15 +1,17 @@
-import React,{useState} from "react";
+import React from "react";
 
- function Adicionar(){
-    const[contador,setContador]=useState(0);
-    function incrementarContador(){
-        const contador= contador+1;
-        setContador(contador);
-    }
-    return(
-    <div>
-        
-    </div>
+ function Adicionar(props){
+    const { produto, adicionarProduto } = props;
+    return (
+        <div>
+            <img className='small' src={produto.imagem} alt={produto.nome} />
+            <h3>{produto.nome}</h3>
+            <div>{produto.preco.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})}</div>
+            <div>
+            {/* adicionarProduto vem da função adicionarProduto no App.js */}
+                <button onClick={() => adicionarProduto(produto)}>Adicionar ao carrinho</button>
+            </div>
+        </div>
     )
 }
 

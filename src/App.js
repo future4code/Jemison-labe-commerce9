@@ -1,79 +1,67 @@
 import React, {useState} from 'react';
 import './App.css';
-<<<<<<< HEAD
 import { Carrinho } from './components/Carrinho/Carrinho';
 import Home from './components/Home/Home';
 import { listaDeDados } from './components/Home/MockDeDados';
 // import {Filters} from './components/Filtro/Filtro';
 // // import { Filtro } from './components/Filtro';
 // import { Home } from './components/Home/Home';
-=======
-import Home from './components/Home/Home';
-
-
-// import { FiltroApp } from './components/Filtro/FiltroApp';
-
->>>>>>> 064e08c3207f9418cf6b0c61930fa62c09deb9e0
 
 function App() {
 const {produtos} = listaDeDados;
 
-  const [cartItems, setCartItems] = useState([]);
+const [itensCarrinho, setItensCarrinho] = useState([]);
 
-  // Função para somar items ao carrinho
-  const onAdd = (produto) => {
+// Função para adicionar items ao carrinho
+const adicionarProduto = (produto) => {
 
-    const exist = cartItems.find((x) => x.id === produto.id);
+  const carrinho = itensCarrinho.find((item) => item.id === produto.id);
 
-    if (exist) {
-      setCartItems(
-        cartItems.map((x) =>
-          x.id === produto.id ? { ...exist, qty: exist.qty + 1 } : x
-        )
-      );
-    } else {
-      setCartItems([...cartItems, { ...produto, qty: 1 }]);
-    }
+  if (carrinho) {
+    setItensCarrinho(
+      itensCarrinho.map((item) =>
+        item.id === produto.id ? { ...carrinho, quantidade: carrinho.quantidade + 1 } : item
+      )
+    );
+  } else {
+    setItensCarrinho([...itensCarrinho, { ...produto, quantidade: 1 }]);
   }
+}
 
-  // Função para excluir items do carrinho
-  const onRemove = (produto) => {
+// Função para excluir items do carrinho
+const removerProduto = (produto) => {
 
-    const exist = cartItems.find((x) => x.id === produto.id);
+  const carrinho = itensCarrinho.find((item) => item.id === produto.id);
 
-    if (exist.qty === 1) {
-      setCartItems(
-        cartItems.filter((x) => x.id !== produto.id)
-      );
-    } else {
-      setCartItems(
-        cartItems.map((x) =>
-          x.id === produto.id ? { ...exist, qty: exist.qty - 1 } : x
-        )
-      );
-    }
+  if (carrinho.quantidade === 1) {
+    setItensCarrinho(
+      itensCarrinho.filter((item) => item.id !== produto.id)
+    );
+  } else {
+    setItensCarrinho(
+      itensCarrinho.map((item) =>
+        item.id === produto.id ? { ...carrinho, quantidade: carrinho.quantidade - 1 } : item
+      )
+    );
   }
+}
  
   return (
-<<<<<<< HEAD
-    <div className="App">
-     <div countCartItems={cartItems.length} />
-      <div className='row'></div>
-      <Home
-        onAdd={onAdd}
-        produtos={produtos} />
-      <Carrinho
-        onAdd={onAdd}
-        onRemove={onRemove}
-        cartItems={cartItems} />
-      {/* <Filtro/> */}
-=======
-    <div>
-      <Home/>
-
->>>>>>> 064e08c3207f9418cf6b0c61930fa62c09deb9e0
+    <div className='App'>
+      <div className='row'>
+        <Home
+          adicionarProduto={adicionarProduto}
+          produtos={produtos}
+        />
+        <Carrinho
+          adicionarProduto={adicionarProduto}
+          removerProduto={removerProduto}
+          itensCarrinho={itensCarrinho}
+        />
+      </div>
     </div>
   );
+  
 }
 
 export default App

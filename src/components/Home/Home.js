@@ -1,14 +1,15 @@
 import React,{useState} from "react";
 import {ContainerPai,Btn,CardBtn,Card,Imagem} from "./style";
 import {listaDeDados} from './MockDeDados';
-// import {contador,incrementarContador} from './Adicionar';
+// import {contador,adicionarProduto} from './Adicionar';
 
 
 function Home(props){
-    const[contador,setContador]=useState(0);
-    function incrementarContador(){
-     let   cont= contador+1;
-        setContador(cont);
+
+    
+    function adicionarProduto(){
+        const {produto, adicionarProduto} =props;
+  
     }
     // const[adiciona,setAdiciona]=useState([...listaDeDados])
     // setAdiciona()=>{
@@ -31,7 +32,7 @@ function Home(props){
                <span>{produto.ColorSpan}</span>
                <CardBtn>
                      <h3>{contador}</h3>
-                  <Btn onClick={incrementarContador}>
+                  <Btn onClick={adicionarProduto}>
                     Adicionar ao Carrinho
                     </Btn    > 
                </CardBtn>    
