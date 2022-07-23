@@ -1,4 +1,36 @@
 import Foto1 from './img/tshirtBlack.png';
+<<<<<<< HEAD
+=======
+ 
+ export const listaDeDados =[
+       
+    {   id:1,
+        nome: "Camisa",
+        foto: Foto1,
+        Preco:150,
+        Size:"G",
+        ColorSpan:"Black",
+   
+   },
+   
+    {   
+        id:2,
+        nome: "Camisa Star Wars 2",
+        foto:Foto1,
+        Preco:180,
+        Size:"M",
+        ColorSpan:"White",
+    
+   },
+   
+    {   
+        id:3,
+        nome: "Camisa Star Wars 2",
+        foto:Foto1,
+        Preco: 230,
+        Size:"P",
+        ColorSpan:"Yellow",
+>>>>>>> 064e08c3207f9418cf6b0c61930fa62c09deb9e0
 
 export const listaDeDados = {
     produtos: [

@@ -1,11 +1,19 @@
 import React, {useState} from 'react';
 import './App.css';
+<<<<<<< HEAD
 import { Carrinho } from './components/Carrinho/Carrinho';
 import Home from './components/Home/Home';
 import { listaDeDados } from './components/Home/MockDeDados';
 // import {Filters} from './components/Filtro/Filtro';
 // // import { Filtro } from './components/Filtro';
 // import { Home } from './components/Home/Home';
+=======
+import Home from './components/Home/Home';
+
+
+// import { FiltroApp } from './components/Filtro/FiltroApp';
+
+>>>>>>> 064e08c3207f9418cf6b0c61930fa62c09deb9e0
 
 function App() {
 const {produtos} = listaDeDados;
@@ -47,6 +55,7 @@ const {produtos} = listaDeDados;
   }
  
   return (
+<<<<<<< HEAD
     <div className="App">
      <div countCartItems={cartItems.length} />
       <div className='row'></div>
@@ -58,6 +67,11 @@ const {produtos} = listaDeDados;
         onRemove={onRemove}
         cartItems={cartItems} />
       {/* <Filtro/> */}
+=======
+    <div>
+      <Home/>
+
+>>>>>>> 064e08c3207f9418cf6b0c61930fa62c09deb9e0
     </div>
   );
 }
