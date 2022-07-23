@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import {ContainerPai,Btn,CardBtn,Card,Imagem} from "./style";
 import {listaDeDados} from './MockDeDados';
-import {contador,incrementarContador} from './Adicionar';
+// import {contador,incrementarContador} from './Adicionar';
 
 
 function Home(props){
