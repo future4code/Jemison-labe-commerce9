@@ -5,7 +5,7 @@ import Foto1 from './img/tshirtBlack.png';
     {   id:1,
         nome: "Camisa",
         foto: Foto1,
-        Preco:50000,
+        Preco:150,
         Size:"G",
         ColorSpan:"Black",
    
